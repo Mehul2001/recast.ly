@@ -1,20 +1,35 @@
-var App = () => (
-  <div>
-    <nav className="navbar">
-      <div className="col-md-6 offset-md-3">
-        <div><h5><em>search</em> Mehul is</h5></div>
+// import VideoList from '/src/components/VideoList.jsx';
+// import VideoListEntry from '/src/components/VideoListEntry.jsx';
+// import videoPlayer from '/src/components/VideoPlayer.jsx';
+// import exampleVideoData from '/src/data/exampleVideoData.js';
+
+class App extends React.Component {
+  constructor (props){
+    super(props);
+    this.state = {
+      isSelected : false
+    };
+  }
+  render() {
+    return (
+      <div>
+        <nav className="navbar">
+          <div className="col-md-6 offset-md-3">
+            <div><h5><em>search</em> Mehul is</h5></div>
+          </div>
+        </nav>
+        <div className="row">
+          <div className="col-md-7">
+            <div><h5><em>videoPlayer</em> view goes here</h5></div>
+          </div>
+          <div className="col-md-5">
+            <div><h5><em>videoList</em> view goes here</h5></div>
+          </div>
+        </div>
       </div>
-    </nav>
-    <div className="row">
-      <div className="col-md-7">
-        <div><h5><em>videoPlayer</em> view goes here</h5></div>
-      </div>
-      <div className="col-md-5">
-        <div><h5><em>videoList</em> view goes here</h5></div>
-      </div>
-    </div>
-  </div>
-);
+    );
+  }
+}
 
 
 // In the ES6 spec, files are "modules" and do not share a top-level scope

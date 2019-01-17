@@ -3,13 +3,13 @@ import exampleVideoData from '/src/data/exampleVideoData.js';
 // console.log(exampleVideoData)
 console.log(exampleVideoData[0]);
 console.log(exampleVideoData[0].snippet.title);
-var VideoList = (props) => (
+var VideoList = () => (
   <div className="video-list">
-    <div><h5><em>{exampleVideoData[0]}</em> view goes here</h5></div>
-    {/* <div><h5><em>videoListEntry</em> view goes here</h5></div>
     <div><h5><em>videoListEntry</em> view goes here</h5></div>
     <div><h5><em>videoListEntry</em> view goes here</h5></div>
-    <div><h5><em>videoListEntry</em> view goes here</h5></div> */}
+    <div><h5><em>videoListEntry</em> view goes here</h5></div>
+    <div><h5><em>videoListEntry</em> view goes here</h5></div>
+    <div><h5><em>videoListEntry</em> view goes here</h5></div>
   </div>
 );
 
