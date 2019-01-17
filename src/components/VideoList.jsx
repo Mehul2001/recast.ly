@@ -1,8 +1,8 @@
 import exampleVideoData from '/src/data/exampleVideoData.js';
 
 // console.log(exampleVideoData)
-console.log(exampleVideoData[0])
-console.log(exampleVideoData[0].snippet.title)
+console.log(exampleVideoData[0]);
+console.log(exampleVideoData[0].snippet.title);
 var VideoList = (props) => (
   <div className="video-list">
     <div><h5><em>{exampleVideoData[0]}</em> view goes here</h5></div>
